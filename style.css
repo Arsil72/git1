@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200;600;700&family=Source+Sans+Pro&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Poppins:wght@200;600;700&family=Source+Sans+Pro:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: antiquewhite;
+  font-family: "Varela Round", sans-serif;
+}
+nav {
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+}
+.brand img {
+  width: 150px;
+  padding: 0 10px;
+}
+.container {
+  min-height: 58vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 55%;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 25px auto;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+}
+.bottom {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.icons {
+  margin-top: 20px;
+}
+.icons i:hover {
+  color: #1ab26b;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.icons i{
+  margin-right: 5px;
+}
+#myProgresBar {
+  text-align: center;
+  width: 80vw;
+  cursor: pointer;
+}
+.songItem{
+    margin: 10px 0;
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+.songItem img{
+    width: 35px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.listPlay .fa-circle-play{
+    color: #1ab26b;
+}
+.listPlay .fa-circle-play:hover{
+    color: #208355;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.songInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 8px;
+}
+.songInfo img{
+  opacity: 0;
+  transition: 0.5s;
+}
